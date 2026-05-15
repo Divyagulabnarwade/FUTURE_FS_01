@@ -4,14 +4,20 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
     max-width: 800px;
     margin: 40px auto;
     background: #fff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.01);
 }
 
 h1 {
@@ -35,17 +41,49 @@ hr {
     display: inline-block;
     background: #007bff;
     color: white;
-    padding: 8px 12px;
-    margin: 5px;
+    padding: 8px 14px;
+    margin: 6px;
     border-radius: 20px;
     font-size: 14px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: #0056b3;
+    transform: scale(1.1);
 }
 
 .card {
     background: #f9f9f9;
     padding: 15px;
     margin-top: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
 }
 
 a {
