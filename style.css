@@ -16,55 +16,47 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: rgba(255, 255, 255, 0.1);
+
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
+
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* LOGO */
-.logo-text {
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-/* NAV LINKS */
+/* links */
 nav ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-    position: relative;
-}
-
-/* LINK STYLE */
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 15px;
-    padding: 5px 0;
-    transition: 0.3s;
+    position: relative;
 }
 
-/* 🔥 UNDERLINE ANIMATION */
+/* underline animation */
 nav a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -4px;
     width: 0%;
     height: 2px;
     background: #ffcc70;
-    transition: width 0.3s ease;
+    transition: 0.3s;
 }
 
-/* ON HOVER → expand line */
 nav a:hover::after {
     width: 100%;
+}
+
+nav a:hover {
+    color: #ffcc70;
+}
 }
 
 /* ✨ GLOW EFFECT */
@@ -158,4 +150,12 @@ footer {
     padding: 20px;
     background: rgba(0,0,0,0.3);
     margin-top: 40px;
+}
+a {
+    color: #ffcc70;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
 }
