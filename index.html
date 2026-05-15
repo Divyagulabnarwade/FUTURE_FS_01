@@ -27,13 +27,13 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+     <section id="about" class="hidden">
         <h2>👩‍💻 About Me</h2>
         <p>I am a passionate learner building creative and real-world web projects.</p>
     </section>
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="hidden">
         <h2>⚡ Skills</h2>
         <div class="skills">
             <span>HTML</span>
@@ -44,7 +44,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="hidden">
         <h2>📂 Projects</h2>
         <div class="card">
             <h3>🌐 Portfolio Website</h3>
@@ -53,7 +53,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="hidden">
         <h2>📞 Contact</h2>
         <p>Email: <a href="mailto:dgnarwade2022@gmail.com">dgnarwade2022@gmail.com</a></p>
 
@@ -68,6 +68,18 @@
 <footer>
     <p>© 2026 Divya | Portfolio</p>
 </footer>
+<script>
+const hiddenElements = document.querySelectorAll('.hidden');
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+hiddenElements.forEach((el) => observer.observe(el));
+</script>
 </body>
 </html>
