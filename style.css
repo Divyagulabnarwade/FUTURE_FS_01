@@ -10,48 +10,68 @@ body {
     color: white;
 }
 
-/* Navbar */
+/* NAVBAR BASE */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    z-index: 1000;
 }
 
-/* Logo text (Divya) */
-nav h2 {
-    margin: 0;
+/* LOGO */
+.logo-text {
     color: white;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-/* Menu */
+/* NAV LINKS */
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 12px;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
 }
 
+/* LINK STYLE */
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-size: 15px;
+    padding: 5px 0;
     transition: 0.3s;
 }
 
-nav a:hover {
-    color: #ffcc70;
+/* 🔥 UNDERLINE ANIMATION */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #ffcc70;
+    transition: width 0.3s ease;
 }
 
+/* ON HOVER → expand line */
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ✨ GLOW EFFECT */
+nav a:hover {
+    color: #ffcc70;
+    text-shadow: 0 0 8px rgba(255, 204, 112, 0.8);
+}
 /* Container */
 .container {
     max-width: 800px;
