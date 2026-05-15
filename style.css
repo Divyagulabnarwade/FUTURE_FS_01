@@ -1,17 +1,54 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
 h1 {
-    color: #333;
+    color: #222;
+    margin-top: 40px;
 }
 
 h2 {
-    color: #555;
+    color: #444;
+    margin-top: 30px;
 }
 
 p {
     color: #666;
+    font-size: 16px;
+}
+
+hr {
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffff;
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Container style (optional improvement) */
+body > * {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact section */
+h2:last-of-type {
+    margin-bottom: 10px;
 }
