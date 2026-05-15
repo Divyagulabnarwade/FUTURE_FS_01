@@ -11,21 +11,19 @@ body {
 }
 
 /* NAVBAR BASE */
+/* NAVBAR BASE */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
-
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* links */
 nav ul {
     list-style: none;
     display: flex;
@@ -38,7 +36,7 @@ nav a {
     position: relative;
 }
 
-/* underline animation */
+/* underline */
 nav a::after {
     content: "";
     position: absolute;
@@ -54,9 +52,10 @@ nav a:hover::after {
     width: 100%;
 }
 
+/* glow */
 nav a:hover {
     color: #ffcc70;
-}
+    text-shadow: 0 0 8px rgba(255, 204, 112, 0.8);
 }
 
 /* ✨ GLOW EFFECT */
