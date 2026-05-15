@@ -1,54 +1,55 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    background: linear-gradient(to right, #eef2f3, #dfe9f3);
     margin: 0;
     padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
 }
 
 h1 {
-    color: #222;
-    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    color: #777;
 }
 
 h2 {
-    color: #444;
-    margin-top: 30px;
-}
-
-p {
-    color: #666;
-    font-size: 16px;
+    margin-top: 25px;
+    color: #333;
 }
 
 hr {
-    width: 60%;
-    margin: 20px auto;
-    border: 1px solid #ddd;
+    margin: 20px 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.skills span {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
-li {
-    background: #ffffff;
-    margin: 10px auto;
-    padding: 10px;
-    width: 50%;
+.card {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Container style (optional improvement) */
-body > * {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Contact section */
-h2:last-of-type {
-    margin-bottom: 10px;
+a {
+    color: #007bff;
+    text-decoration: none;
 }
