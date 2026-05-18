@@ -26,6 +26,7 @@ nav {
 .logo {
     color: #a18cd1;
     font-weight: bold;
+    font-size: 22px;
 }
 nav ul {
     list-style: none;
@@ -196,4 +197,18 @@ a:hover {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+/* Fix email visibility */
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #ff6f91;        /* visible pink */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #a18cd1;
 }
